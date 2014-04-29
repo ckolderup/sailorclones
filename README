@@ -1,0 +1,2 @@
+Tweets an idiom of the form "Red sky at morning, sailors take warning; red sky at night, sailors' delight."
+Uses Twitter search to find the thing to be warned/delighted about and a static list of words to replace 'sailor'.

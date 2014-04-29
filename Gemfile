@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'twitter'
+gem 'foreman'
+gem 'andand'
+gem 'obscenity', git: 'git://github.com/ckolderup/obscenity.git', branch: 'ruby-2.0'
