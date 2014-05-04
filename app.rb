@@ -13,9 +13,9 @@ Obscenity.configure do |config|
 end
 
 def has_blacklisted(text)
-    terms = ["http", "heights", "David Bowie", 
+    terms = ["http", "heights", "David Bowie",
              "everything", "losing you", "the dark"]
-    !!text.match(Regexp.union(*terms))
+    !!text.match(Regexp.union(terms.map {|s| /#{s}/i}))
 end
 
 options = {}
