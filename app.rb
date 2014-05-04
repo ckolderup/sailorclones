@@ -41,8 +41,8 @@ end
 red_sky = nil
 length = 141
 while red_sky.nil? || length > 140 do
-    sailor_source = Array.new(9, "./jobs.txt") +
-                          Array.new(1, "./ors.txt")
+    sailor_source = Array.new(8, "./jobs.txt") +
+                          Array.new(2, "./ors.txt")
 
     sailor = File.readlines(sailor_source.sample).sample.chomp
     red_sky = client.search("\"#{SEARCH_QUERY}\"", result_type: "recent").
