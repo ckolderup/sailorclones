@@ -43,7 +43,7 @@ while red_sky.nil? do
     sailor = File.readlines('./ors.txt').sample.chomp
     red_sky = client.search("\"#{SEARCH_QUERY}\"", result_type: "recent").
         collect.take(500).flat_map { |tweet|
-            tweet.text.match(/#{SEARCH_QUERY}([a-zA-Z0-9 &\-]+)/i).andand.captures.andand.first
+            tweet.text.match(/#{SEARCH_QUERY}([a-zA-Z0-9 &\-']+)/i).andand.captures.andand.first
         }.reject {|text|
             text.nil? ||
             text.length < 5 ||
