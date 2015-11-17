@@ -1,5 +1,6 @@
-ruby '2.0.0'
+ruby '2.2.2'
 source 'https://rubygems.org'
+gem 'htmlentities'
 gem 'twitter'
 gem 'foreman'
 gem 'andand'
